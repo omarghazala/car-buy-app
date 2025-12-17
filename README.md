@@ -151,25 +151,18 @@ Currently, no authentication is required (add Spring Security for production).
 ### Package Structure
 
 ```
-com.carbuying
-├── adapter/              # Inspection company adapters
-│   ├── impl/
-│   │   ├── AutoCheckCoAdapter.java
-│   │   └── VehiVerifyIncAdapter.java
-│   ├── InspectionAdapter.java (interface)
-│   └── InspectionAdapterFactory.java
-├── config/               # Configuration classes
-│   ├── OpenApiConfig.java
-│   └── FlywayConfig.java
+com.car.buy.app
 ├── controller/           # REST API controllers
 │   ├── CustomerRequestController.java
 │   ├── SupplierOfferController.java
-│   └── AppInfoController.java
 ├── dto/                  # Data Transfer Objects
 │   ├── CreateRequestDTO.java
 │   ├── CreateOfferDTO.java
 │   ├── CustomerRequestResponseDTO.java
 │   └── SupplierOfferResponseDTO.java
+│   └── ErrorResponse.java
+│   └── SupplierOfferResponseDTO.java
+│   └── UpdateRequestStatusDTO.java
 ├── entity/               # JPA entities
 │   ├── CustomerRequest.java
 │   └── SupplierOffer.java
@@ -185,7 +178,10 @@ com.carbuying
 ├── repository/           # Data access layer
 │   ├── CustomerRequestRepository.java
 │   └── SupplierOfferRepository.java
-├── service/              # Business logic
+├── service/  # Business logic
+        /implementation
+        ├── CustomerRequestServiceImpl.java
+        ├── CustomerRequestServiceImpl.java           
 │   ├── CustomerRequestService.java
 │   └── SupplierOfferService.java
 └── CarBuyingApplication.java  # Main application class
@@ -216,4 +212,5 @@ curl http://localhost:8080/api/info
 ```
 
 **Happy Coding! 🚗💨**
+
 
