@@ -14,7 +14,6 @@ A comprehensive Spring Boot application for managing car buying requests and sup
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
-- [Architecture](#architecture)
 - [Configuration](#configuration)
 - [Troubleshooting](#troubleshooting)
 
@@ -205,12 +204,13 @@ mvn clean install
 mvn spring-boot:run
 
 # 3. Access
-open http://localhost:8080/swagger-ui.html
+open http://localhost:8080/swagger-ui/index.html
 
 # 4. Test
 curl http://localhost:8080/api/info
 ```
 
 **Happy Coding! 🚗💨**
+
 
 
